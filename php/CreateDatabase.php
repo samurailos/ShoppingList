@@ -9,11 +9,17 @@ class CreateDatabase
         public $tablename;
         public $conn;
 
+         //Development Connection
+        /*$host = 'localhost';
+        $db = 'productdb';
+        $user = 'root';
+        $pass = '';
+        $charset = 'utf8mb4';*/
 
         //CONSTRUCTOR FOR CLASS
         public function __construct(
         $dbname = "heroku_7bb4c93e415ee60",
-        $tablename = "Productdb",
+        $tablename = "producttb",
         $servername = "us-cdbr-east-02.cleardb.com",
         $username = "bc2410c0c6701a",
         $password = "cde9877c"
