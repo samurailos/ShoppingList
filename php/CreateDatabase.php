@@ -14,9 +14,11 @@ class CreateDatabase
         public function __construct(
         $dbname = "Newdb",
         $tablename = "Productdb",
-        $servername = "localhost",
-        $username = "root",
-        $password = ""
+        $servername = "us-cdbr-east-02.cleardb.com",
+        $username = "
+        bc2410c0c6701a",
+        $password = "
+        cde9877c"
     )
     {
       $this->dbname = $dbname;
