@@ -10,8 +10,8 @@ class CreateDatabase
         public $conn;
 
          //Development Connection
-        /*$host = 'localhost';
-        $db = 'productdb';
+        /*$servername = 'localhost';
+        $dbname = 'productdb';
         $user = 'root';
         $pass = '';
         $charset = 'utf8mb4';*/
@@ -23,14 +23,13 @@ class CreateDatabase
         $servername = "us-cdbr-east-02.cleardb.com",
         $username = "bc2410c0c6701a",
         $password = "cde9877c"*/
+        
         public function __construct(
             $dbname = "sql10383257",
             $tablename = "producttb",
             $servername = "sql10.freemysqlhosting.net",
             $username = "sql10383257",
             $password = "j9c76VcLkH"
-
-
 
     )
     {

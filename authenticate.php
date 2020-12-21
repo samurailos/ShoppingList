@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+        //Development Connection
+        /*$DATABASE_HOST = 'localhost';
+        $DATABASE_NAME = 'productdb';
+        $DATABASE_USER = 'root';
+        $DATABASE_PASS= '';
+        $charset = 'utf8mb4';*/
+
 // CONNECTION INFO
 /*$DATABASE_HOST = 'us-cdbr-east-02.cleardb.com';
 $DATABASE_USER = 'bc2410c0c6701a';
