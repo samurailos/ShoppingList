@@ -1,7 +1,0 @@
-{
-    "require": {
-        
-        "elastic-email/web-api-client": "^1.0"
-        
-    }
-}
