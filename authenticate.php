@@ -2,22 +2,23 @@
 session_start();
 
         //Development Connection
-       /* $DATABASE_HOST = 'localhost';
-        $DATABASE_NAME = 'productdb';
+        $DATABASE_HOST = 'localhost';
+        $DATABASE_NAME = 'Productdb';
         $DATABASE_USER = 'root';
         $DATABASE_PASS= '';
-        $charset = 'utf8mb4';*/
+        $charset = 'utf8mb4';
 
-// CONNECTION INFO
+// Online connection 1st tried
 /*$DATABASE_HOST = 'us-cdbr-east-02.cleardb.com';
 $DATABASE_USER = 'bc2410c0c6701a';
 $DATABASE_PASS = 'cde9877c';
 $DATABASE_NAME = 'heroku_7bb4c93e415ee60';*/
 
-$DATABASE_HOST = 'sql10.freemysqlhosting.net';
+//Online connection 2nd tried
+/*$DATABASE_HOST = 'sql10.freemysqlhosting.net';
 $DATABASE_USER = 'sql10383257';
 $DATABASE_PASS = 'j9c76VcLkH';
-$DATABASE_NAME = 'sql10383257';
+$DATABASE_NAME = 'sql10383257';*/
 
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
