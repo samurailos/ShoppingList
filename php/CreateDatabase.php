@@ -17,12 +17,21 @@ class CreateDatabase
         $charset = 'utf8mb4';*/
 
         //CONSTRUCTOR FOR CLASS
-        public function __construct(
+       /* public function __construct(
         $dbname = "heroku_7bb4c93e415ee60",
         $tablename = "producttb",
         $servername = "us-cdbr-east-02.cleardb.com",
         $username = "bc2410c0c6701a",
-        $password = "cde9877c"
+        $password = "cde9877c"*/
+        public function __construct(
+            $dbname = "sql10383257",
+            $tablename = "producttb",
+            $servername = "sql10.freemysqlhosting.net",
+            $username = "sql10383257",
+            $password = "j9c76VcLkH"
+
+
+
     )
     {
       $this->dbname = $dbname;
