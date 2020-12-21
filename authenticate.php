@@ -2,14 +2,19 @@
 session_start();
 
 // CONNECTION INFO
-$DATABASE_HOST = 'us-cdbr-east-02.cleardb.com';
+/*$DATABASE_HOST = 'us-cdbr-east-02.cleardb.com';
 $DATABASE_USER = 'bc2410c0c6701a';
 $DATABASE_PASS = 'cde9877c';
-$DATABASE_NAME = 'heroku_7bb4c93e415ee60';
+$DATABASE_NAME = 'heroku_7bb4c93e415ee60';*/
+
+$DATABASE_HOST = 'sql10.freemysqlhosting.net';
+$DATABASE_USER = 'sql10383257';
+$DATABASE_PASS = 'j9c76VcLkH';
+$DATABASE_NAME = 'sql10383257';
 
 // Try and connect using the info above.
-//$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
-$con = "mysql:host=$DATABASE_HOST;dbname=$DATABASE_NAME;charset=$charset";
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+//$con = "mysql:host=$DATABASE_HOST;dbname=$DATABASE_NAME;charset=$charset";
 
 if ( mysqli_connect_errno() ) {
 	// If there is an error with the connection, stop the script and display the error.
