@@ -8,7 +8,9 @@ $DATABASE_PASS = 'cde9877c';
 $DATABASE_NAME = 'heroku_7bb4c93e415ee60';
 
 // Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+//$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$con = "mysql:host=$DATABASE_HOST;dbname=$DATABASE_NAME;charset=$charset";
+
 if ( mysqli_connect_errno() ) {
 	// If there is an error with the connection, stop the script and display the error.
 	exit('Failed to connect to MySQL: ' . mysqli_connect_error());
