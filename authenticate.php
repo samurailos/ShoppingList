@@ -2,7 +2,7 @@
 session_start();
 
         //Development Connection
-        /*$DATABASE_HOST = 'localhost';
+       /* $DATABASE_HOST = 'localhost';
         $DATABASE_NAME = 'productdb';
         $DATABASE_USER = 'root';
         $DATABASE_PASS= '';

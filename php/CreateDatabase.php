@@ -25,11 +25,11 @@ class CreateDatabase
         $password = "cde9877c"*/
         
         public function __construct(
-            $dbname = "sql10383257",
-            $tablename = "producttb",
-            $servername = "sql10.freemysqlhosting.net",
-            $username = "sql10383257",
-            $password = "j9c76VcLkH"
+            $dbname = 'sql10383257',
+            $tablename = 'producttb',
+            $servername = 'sql10.freemysqlhosting.net',
+            $username = 'sql10383257',
+            $password = 'j9c76VcLkH'
 
     )
     {
