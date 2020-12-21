@@ -12,13 +12,11 @@ class CreateDatabase
 
         //CONSTRUCTOR FOR CLASS
         public function __construct(
-        $dbname = "Newdb",
+        $dbname = "heroku_7bb4c93e415ee60",
         $tablename = "Productdb",
         $servername = "us-cdbr-east-02.cleardb.com",
-        $username = "
-        bc2410c0c6701a",
-        $password = "
-        cde9877c"
+        $username = "bc2410c0c6701a",
+        $password = "cde9877c"
     )
     {
       $this->dbname = $dbname;
