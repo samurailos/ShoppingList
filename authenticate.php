@@ -1,10 +1,10 @@
 <?php
 session_start();
 // CONNECTION INFO
-$DATABASE_HOST = 'localhost';
-$DATABASE_USER = 'root';
-$DATABASE_PASS = '';
-$DATABASE_NAME = 'productdb';
+$DATABASE_HOST = 'us-cdbr-east-02.cleardb.com';
+$DATABASE_USER = 'bc2410c0c6701a';
+$DATABASE_PASS = 'cde9877c';
+$DATABASE_NAME = 'heroku_7bb4c93e415ee60';
 // Try and connect using the info above.
 $con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 if ( mysqli_connect_errno() ) {
