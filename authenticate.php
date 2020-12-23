@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 //New Remote Database Connection//
 $host = 'remotemysql.com';
 $db = 'OOpAJs8VPh';
@@ -19,8 +20,12 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
         throw new PDOException($e->getMessage());
         //echo "<h1 class='text-danger'>No Database detected</h1>";
     }
-       /* //Development Connection
-        $DATABASE_HOST = 'localhost';
+       
+   
+
+        //Development Connection
+
+        /*$DATABASE_HOST = 'localhost';
         $DATABASE_NAME = 'Productdb';
         $DATABASE_USER = 'root';
         $DATABASE_PASS= '';
