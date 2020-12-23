@@ -3,7 +3,7 @@ session_start();
 require_once ("php/CreateDatabase.php");
 require_once ("php/component.php");
 
-$db = new CreateDatabase("OOpAJs8VPh", "Producttb");
+$db = new CreateDatabase("OOpAJs8VPh", "producttb");
 
 if (isset($_POST['remove'])){
   if ($_GET['action'] == 'remove'){
