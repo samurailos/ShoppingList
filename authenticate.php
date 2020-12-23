@@ -2,26 +2,7 @@
 session_start();
 
 
-//New Remote Database Connection//
-$host = 'remotemysql.com';
-$db = 'OOpAJs8VPh';
-$user = 'OOpAJs8VPh';
-$pass = 'A8xV3UYbOB';
-$charset = 'utf8mb4';
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
-
-    try{
-        $pdo = new PDO($dsn, $user, $pass);
-        //echo 'Hi there Database';
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    }catch(PDOException $e) {
-        throw new PDOException($e->getMessage());
-        //echo "<h1 class='text-danger'>No Database detected</h1>";
-    }
-       
-  ?> 
 
         //Development Connection
 
@@ -43,8 +24,15 @@ $DATABASE_USER = 'sql10383257';
 $DATABASE_PASS = 'j9c76VcLkH';
 $DATABASE_NAME = 'sql10383257';*/
 
+// Online connection 3rdtried
+$DATABASE_HOST = 'remotemysql.com';
+$DATABASE_USER = 'OOpAJs8VPh';
+$DATABASE_PASS = 'A8xV3UYbOB';
+$DATABASE_NAME = 'OOpAJs8VPh';
+
+
 // Try and connect using the info above.
-/*$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 //$con = "mysql:host=$DATABASE_HOST;dbname=$DATABASE_NAME;charset=$charset";
 
 if ( mysqli_connect_errno() ) {
