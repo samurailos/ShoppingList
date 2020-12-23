@@ -1,12 +1,30 @@
 <?php
 session_start();
 
-        //Development Connection
+//New Remote Database Connection//
+$host = 'remotemysql.com';
+$db = 'OOpAJs8VPh';
+$user = 'OOpAJs8VPh';
+$pass = 'A8xV3UYbOB';
+$charset = 'utf8mb4';
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
+    try{
+        $pdo = new PDO($dsn, $user, $pass);
+        //echo 'Hi there Database';
+        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+    }catch(PDOException $e) {
+        throw new PDOException($e->getMessage());
+        //echo "<h1 class='text-danger'>No Database detected</h1>";
+    }
+       /* //Development Connection
         $DATABASE_HOST = 'localhost';
         $DATABASE_NAME = 'Productdb';
         $DATABASE_USER = 'root';
         $DATABASE_PASS= '';
-        $charset = 'utf8mb4';
+        $charset = 'utf8mb4';*/
 
 // Online connection 1st tried
 /*$DATABASE_HOST = 'us-cdbr-east-02.cleardb.com';
