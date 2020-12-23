@@ -21,7 +21,7 @@ $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
         //echo "<h1 class='text-danger'>No Database detected</h1>";
     }
        
-   
+  ?> 
 
         //Development Connection
 
@@ -44,7 +44,7 @@ $DATABASE_PASS = 'j9c76VcLkH';
 $DATABASE_NAME = 'sql10383257';*/
 
 // Try and connect using the info above.
-$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
+/*$con = mysqli_connect($DATABASE_HOST, $DATABASE_USER, $DATABASE_PASS, $DATABASE_NAME);
 //$con = "mysql:host=$DATABASE_HOST;dbname=$DATABASE_NAME;charset=$charset";
 
 if ( mysqli_connect_errno() ) {
