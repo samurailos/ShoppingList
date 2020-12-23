@@ -12,7 +12,7 @@
     require_once('./php/component.php');
 
     //instance of createdatabase class
-    $database = new CreateDatabase("Productdb", "Producttb");
+    $database = new CreateDatabase("OOpAJs8VPh", "producttb");
 
     if(isset($_POST['add'])){
       
