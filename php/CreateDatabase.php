@@ -27,12 +27,22 @@ class CreateDatabase
             $password = 'j9c76VcLkH'*/
 
             //DEVELOPMENT SETTING
-            $dbname = "productdb",
+            /*$dbname = "productdb",
             $tablename = "producttb",
             $servername = "localhost",
             $username = "root",
-            $password = ""
+            $password = ""*/
+
+            //remote connect
+            $dbname = "OOpAJs8VPh",
+            $tablename = "producttb",
+            $servername = "remotemysql.com",
+            $username = "OOpAJs8VPh",
+            $password = "A8xV3UYbOB"
          
+           
+
+
     )
     {
       $this->dbname = $dbname;
